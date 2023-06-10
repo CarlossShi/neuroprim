@@ -27,7 +27,7 @@ python train --graph_size 20 --is_stp True
 
 ### Testing
 
-Run `test.ipynb ` to see the performance of pretrained models on random data.
+Run `test.ipynb` to see the performance of pretrained models on random data.
 
 ## Example Solutions
 
