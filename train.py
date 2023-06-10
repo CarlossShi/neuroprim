@@ -41,13 +41,6 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-# dcmst
-# python train.py --graph_size 20 --d_model 64 --dim_feedforward 128 --degree_constrain 3 --num_batches 100 --batch_size 512
-# python train.py --graph_size 20 --d_model 64 --dim_feedforward 128 --degree_constrain 2 --num_batches 100 --batch_size 512
-
-# mcrst
-# python train.py --graph_size 20 --d_model 64 --dim_feedforward 128 --cost_function_key mrcst --num_batches 100 --batch_size 512
-
 
 if __name__ == '__main__':
     cost_functions = {'default': get_costs, 'mrcst': get_mrcst_costs}
@@ -78,7 +71,7 @@ if __name__ == '__main__':
         for k, v in args.__dict__.items() if k not in [
             'track', 'wandb_project_name', 'wandb_entity'
         ]
-    ])  # [Iterate through a Namespace](https://stackoverflow.com/a/14866214/12224183)
+    ])
     print('run name:', run_name)
     os.makedirs('checkpoints/{}'.format(run_name), exist_ok=True)
     if args.track:

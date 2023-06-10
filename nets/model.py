@@ -1,5 +1,4 @@
-import copy
-from typing import Optional, Any, Union, Callable
+from typing import Union, Callable
 import math
 
 import torch
@@ -189,6 +188,11 @@ class Model(nn.Module):
                 break
 
         log_prob_sum = torch.stack(log_prob_sum, dim=1).sum(dim=1)  # (dataset_size * sample_size)
-        # edges: (dataset_size * sample_size, 2, graph_size), log_prob_sum, lengths: (dataset_size * sample_size)
-        return edges, log_prob_sum, lengths, weights_by_step
+        # edges: , log_prob_sum, lengths:
+        return (
+            edges,  # (dataset_size * sample_size, 2, graph_size)
+            log_prob_sum,  # (dataset_size * sample_size)
+            lengths,  # (dataset_size * sample_size)
+            weights_by_step  # list with each element in shape (dataset_size * sample_size, graph_size * graph_size)
+        )
 

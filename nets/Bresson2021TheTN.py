@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-from torch.distributions.categorical import Categorical
 
 
 class Transformer_encoder_net(nn.Module):
