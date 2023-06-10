@@ -188,7 +188,6 @@ class Model(nn.Module):
                 break
 
         log_prob_sum = torch.stack(log_prob_sum, dim=1).sum(dim=1)  # (dataset_size * sample_size)
-        # edges: , log_prob_sum, lengths:
         return (
             edges,  # (dataset_size * sample_size, 2, graph_size)
             log_prob_sum,  # (dataset_size * sample_size)
