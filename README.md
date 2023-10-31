@@ -1,6 +1,8 @@
 # NeuroPrim
 
-NeuroPrim: an attention-based model for solving three spanning tree problems ([DCMST](https://en.wikipedia.org/wiki/Degree-constrained_spanning_tree), [MRCST](https://en.wikipedia.org/wiki/Minimum_routing_cost_spanning_tree), [STP](https://en.wikipedia.org/wiki/Steiner_tree_problem#Steiner_tree_in_graphs_and_variants)) on Euclidean space
+Implementation of paper:
+
+Shi Yuchen, Han Congying, Guo Tiande, [NeuroPrim: An Attention-based Model for Solving NP-hard Spanning Tree Problems](https://www.sciengine.com/SCM/doi/10.1007/s11425-022-2175-5), SCIENCE CHINA Mathematics, 2023.
 
 ![neuroprim](images/neuroprim.png)
 
@@ -40,3 +42,19 @@ Run `test.ipynb` to see the performance of pretrained models on random data.
 - [wouterkool](https://github.com/wouterkool)/**[attention-learn-to-route](https://github.com/wouterkool/attention-learn-to-route)**: data generation in `generate_data.py`
 - [xbresson](https://github.com/xbresson)/**[TSP_Transformer](https://github.com/xbresson/TSP_Transformer)**: network built in `nets/Bresson2021TheTN.py`
 - [Transformer — PyTorch](https://pytorch.org/docs/stable/generated/torch.nn.Transformer.html): Transformer used in `nets/transformer.py`
+
+## Citation
+
+If you find our paper or repository helpful for your research or project, please considering citing our paper with the following BibTeX citation format:
+
+```tex
+@article{:/publisher/Science China Press/journal/SCIENCE CHINA Mathematics///10.1007/s11425-022-2175-5,
+  author = "Shi Yuchen,Han Congying,Guo Tiande",
+  title = "NeuroPrim: An Attention-based Model for Solving NP-hard Spanning Tree Problems",
+  journal = "SCIENCE CHINA Mathematics",
+  year = "2023",
+ pages = "-",
+  url = "http://www.sciengine.com/publisher/Science China Press/journal/SCIENCE CHINA Mathematics///10.1007/s11425-022-2175-5,
+  doi = "https://doi.org/10.1007/s11425-022-2175-5"
+}
+```
