@@ -48,13 +48,12 @@ Run `test.ipynb` to see the performance of pretrained models on random data.
 If you find our paper or repository helpful for your research or project, please considering citing our paper with the following BibTeX citation format:
 
 ```tex
-@article{:/publisher/Science China Press/journal/SCIENCE CHINA Mathematics///10.1007/s11425-022-2175-5,
-  author = "Shi Yuchen,Han Congying,Guo Tiande",
-  title = "NeuroPrim: An Attention-based Model for Solving NP-hard Spanning Tree Problems",
-  journal = "SCIENCE CHINA Mathematics",
-  year = "2023",
- pages = "-",
-  url = "http://www.sciengine.com/publisher/Science China Press/journal/SCIENCE CHINA Mathematics///10.1007/s11425-022-2175-5,
-  doi = "https://doi.org/10.1007/s11425-022-2175-5"
+@article{shi2023neuroprim,
+  author = {Shi, Yuchen and Han, Congying and Guo, Tiande},
+  title = {{NeuroPrim}: An Attention-based Model for Solving NP-hard Spanning Tree Problems},
+  journal = {SCIENCE CHINA Mathematics},
+  year = {2023},
+  url = {https://www.sciengine.com/SCM/doi/10.1007/s11425-022-2175-5},
+  doi = {10.1007/s11425-022-2175-5}
 }
 ```
